@@ -1,0 +1,112 @@
+html, body {
+    margin:0;
+    padding:0;
+}
+img {
+    width: 400px;
+}
+img:active{
+    height:600px;
+
+    width:200px;
+}
+
+.menubar {
+    position: absolute;
+    height: 100vh;
+    width: 40vw;
+    top: 0;
+    right: 0;
+    background: url("../bilder/bgV2_dark.png");
+    border-left: 10px solid;
+}
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Cookie Cookie Cookie-tab"
+      "Cookie Cookie Cookie-tab"
+      "Cookie Cookie Cookie-tab";
+      height: 100vh;
+}
+.Cookie-tab { 
+    grid-area: Cookie-tab; 
+    background: url("../bilder/bgV2_dark.png");
+    border-left: 10px solid;
+}
+.upgradesHeader {
+    position:fixed;
+    width:100%;
+    margin: 0;
+    padding: 10px;
+    position: fixed;
+    color:rgb(255, 238, 238);
+    background-color: black;
+}
+.Cookie h1 {
+    margin:0;
+    padding: 10px;
+    color:rgb(255, 238, 238);
+    background-color: black;
+}
+.Cookie {
+    display:flex;
+    grid-area: Cookie;
+    background:url("../bilder/bgV2.png");
+    align-items: center;
+    justify-content: center;
+}
+.spacing {
+    height: 50px;
+}
+
+.clicks {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+    justify-content: space-between;
+    width: calc(100% - 33%);
+    height: auto;
+    top: 0;
+    left:0;
+    background-color: black;
+}
+.clicks p {
+    margin-right: 10px;
+    color:rgb(255, 238, 238);
+}
+.workerContainer {
+    padding: 10px;
+    background-color: beige;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+}
+.workerContainer:hover {
+    background-color: rgba(245, 245, 220, 0.783);
+}
+.workerContainer h1 {
+    margin:0;
+    color:black;
+    background-color: rgba(240, 248, 255, 0);
+}
+.workerContainer div {
+    padding-left: 10px;
+}
+.unselectable {
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.upgradeTab {
+    display: none;
+}

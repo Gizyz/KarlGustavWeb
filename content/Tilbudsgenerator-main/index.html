@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css\stylesheet.css" type="text/css" rel="stylesheet"">
+    <title>Tilbudsgenerator</title>
+</head>
+<body>
+    <div class="generator">
+        <h1>Tilbudsgenerator</h1>
+        <form>
+            <div class="navn">
+                <label for="sendNavn">Senders navn:</label>
+                <input name="sendNavn" type="text">
+                <label for="mottakNavn">Mottakers navn:</label>
+                <input name="mottakNavn" type="text">
+            </div>
+            <table>
+                <tr>
+                    <th>Produkt</th>
+                    <th>Månedspris</th>
+                    <th>Valg</th>
+                </tr>
+                <label for="nett"></label>
+                <tr>
+                    <td><label for="nettAbb">Nett abonnement</label></td>
+                    <td></td>
+                    <td><input name="nettAbb" type="checkbox"></td>
+                </tr>
+                <tr>
+                    <td><label for="50mbit">Internett 50mbit</label></td>
+                    <td>399,00 kr</td>
+                    <td><input name="nett" id="50mbit" type="radio" value="399"></td>
+                </tr>
+                <tr>
+                    <td><label for="100mbit">Internett 100mbit</label></td>
+                    <td>599,00 kr</td>
+                    <td><input name="nett" id="100mbit" type="radio" value="599"></td>
+                </tr>
+                <tr>
+                    <td><label for="300mbit">Internett 300mbit</label></td>
+                    <td>799,00 kr</td>
+                    <td><input name="nett" id="300mbit" type="radio" value="799"></td>
+                </tr>
+                <tr>
+                    <td><label for="500mbit">Internett 500mbit</label></td>
+                    <td>999,00 kr</td>
+                    <td><input name="nett" id="500mbit" type="radio" value="999"></td>
+                </tr>
+                </table>
+                <table>
+                <tr>
+                    <th>Produkt</th>
+                    <th>Engagnskost</th>
+                </tr>
+                <tr>
+                    <td><label for="tvDekode">Ekstra TV-dekoder</label></td>
+                    <td>399,00 kr</td>
+                    <td><input id="TV-dekoder" name="tvDekode" type="checkbox" value="399"></td>
+                </tr>
+                <tr>
+                    <td><label for="wifiExtend">Wifi-extender</label></td>
+                    <td>499,00 kr</td>
+                    <td><input id="Wifi-extender"name="wifiExtend" type="checkbox" value="499"></td>
+                </tr>
+            </table>
+
+            <input name="rabbat" type="number" value="10" min="0" max="100"><label for="rabbat">% rabbat</label><br>
+            <input type="submit">
+        </form>
+        <textarea id="output"></textarea>
+    </div>
+    <script src="js\script.js"></script>
+</body>
+</html>
